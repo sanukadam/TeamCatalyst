@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailer Highlight Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="hero-section">
+        
+        <div class="overlay"></div>
+        <!-- Background Video -->
+        <video autoplay muted loop id="background-video">
+            <source src="Motivational short video - How to succeed - cartoon.mp4" type="video/mp4">
+        </video>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h1>Trailer Highlight Maker</h1>
+            <p>Trailer Highlight Maker is your go-to destination to experience movie trailers like never before. With our innovative approach, you can explore trailers based on your sentiment and enjoy segmented highlights by genre, including action, adventure, romance, thriller, horror, and comedy. Get ready to unravel the essence of each movie with our unique trailer highlight experience.</p>
+            <a href="#" class="cta-button">Explore Trailer Highlights</a>
+        </div>
+    </div>
+    <div id="highlights-section" class="trailer-highlights">
+        <h2>Choose your Mood?</h2>
+        <p>
+            "Step into character, choose your mood, and let the cinematic journey begin as scenes unfold with every beat. Whether it’s the thrill of high-stakes drama, the warmth of heartfelt romance, or the chill of an edge-of-your-seat thriller, watch the story spark to life through highlight reels that leave you captivated, craving the full tale. This is more than a trailer—it’s your personal preview of the worlds waiting to be explored. Let the adventure begin!"
+        </p>
+        <div class="mood-cards">
+            <div class="mood-card" data-genre="positive">
+                <img src="positive.jpg" alt="Positive Mood">
+                <button class="mood-button" onclick="showDataset('positive')">Positive</button>
+                
+            </div>
+            <div class="mood-card" data-genre="neutral">
+                <img src="neutral.jpg" alt="Neutral Mood">
+                <button class="mood-button" onclick="showDataset('neutral')">Neutral</button>
+            </div>
+            <div class="mood-card" data-genre="negative">
+                <img src="negative.jpg" alt="Negative Mood">
+                <button class="mood-button" onclick="showDataset('negative')">Negative</button>
+            </div>
+        </div>
+        <div class="highlight-content">
+            <!-- Selected mood content will appear here -->
+        </div>
+    </div>
+      <!-- About Section -->
+      <section class="about-section">
+        <h1>About Trailer Highlight Maker</h1>
+        <p class="description">
+            At Trailer Highlight Maker, we are dedicated to transforming the way you perceive movie trailers. Our expertise lies in curating segmented highlights that cater to your specific preferences, ensuring an immersive and captivating trailer viewing experience. We are committed to redefining the art of trailer highlights, setting new standards in the industry.
+            <a href="#">Get in Touch for Custom Trailer Highlights</a>
+        </p>
+    </section>
+
+    <!-- Trailer Highlights by Genre Section -->
+    <section class="genre-highlights">
+        <h2>Explore Trailer Highlights by Genre</h2>
+        <div class="highlight-cards">
+            <div class="highlight-card">
+                <img src="movie1.jpg" alt="30 Yards">
+                <h3>30 Yards</h3>
+            </div>
+            <div class="highlight-card">
+                <img src="movie2.jpg" alt="Utah">
+                <h3>Utah</h3>
+            </div>
+            <div class="highlight-card">
+                <img src="movie3.jpg" alt="Her Majesty">
+                <h3>Her Majesty</h3>
+            </div>
+            <div class="highlight-card">
+                <img src="movie4.jpg" alt="The Rumor">
+                <h3>The Rumor</h3>
+            </div>
+            <div class="highlight-card">
+                <img src="movie5.jpg" alt="White Sands">
+                <h3>Alone</h3>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
